@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Tea - Shop</title>
     <!-- tailwind and daisy ui link -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@3.3.1/dist/full.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
@@ -12,7 +12,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&display=swap"
-        rel="stylesheet">
+    rel="stylesheet">
+    <!-- font awesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- tailwind custom styles -->
     <script>
         tailwind.config = {
@@ -32,8 +34,84 @@
     </style>
 </head>
 
-<body>
+<body class="font-manrope">
+    <!-- header section -->
+    <header>
+        <!-- navbar -->
+        <nav class="navbar bg-base-100">
+            <div class="navbar-start">
+                <div class="dropdown">
+                    <label tabindex="0" class="btn btn-ghost btn-circle">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h16M4 18h7" />
+                        </svg>
+                    </label>
+                    <ul tabindex="0"
+                        class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                        <li><a>Home</a></li>
+                        <li><a>Contact</a></li>
+                        <li><a>About</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="navbar-center">
+                <a class="btn btn-ghost normal-case text-xl md:text-2xl lg:text-3xl">Tea Shop</a>
+            </div>
+            <div class="navbar-end">
+                <button class="btn btn-ghost btn-circle">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                    </svg>
+                </button>
+                <button class="btn btn-ghost btn-circle">
+                    <div class="indicator">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9" />
+                        </svg>
+                        <span class="badge badge-xs badge-primary indicator-item"></span>
+                    </div>
+                </button>
+            </div>
+        </nav>
 
+        <!-- banner section -->
+        <section class="max-w-screen-lg my-24 px-8 md:px-16 lg:px-24">
+            <!-- banner container -->
+            <div class="flex flex-col lg:flex-row items-center">
+                <!-- banner content -->
+                <div class="">
+                    <h2 class="">
+                        It's good 
+                        <br>
+                        tea time at The 
+                        <br>
+                        Tea House
+                    </h2>
+                    <p class="">
+                        Tea and Botanical Solutions Supplier Give Optimum Satisfaction To Your Taste Buds.
+                    </p>
+                    <button class="btn">Explore More <i class="fa-solid fa-arrow-trend-up"></i></button>
+                </div>
+                <!-- banner image -->
+                <div class="">
+                    <img src="./images/banner.png" alt="">
+                </div>
+            </div>
+        </section>
+    </header>
+
+    <!-- main section -->
+    <main>
+
+    </main>
+
+    <!-- footer section -->
 </body>
 
 </html>
