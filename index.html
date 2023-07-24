@@ -37,6 +37,13 @@
         .font-manrope {
             font-family: 'Manrope', sans-serif;
         }
+
+        .gradient-text {
+            background-clip: text;
+            -webkit-background-clip: text;
+            background-image: linear-gradient(to right, #FF8938, #f00);
+            color: transparent;
+        }
     </style>
 </head>
 
@@ -130,8 +137,8 @@
         <!-- featured section -->
         <section class="max-w-screen-xl mx-auto px-8 md:px-16 lg:px-20">
             <!-- section heading -->
-            <div class="text-center space-y-5 text-3xl md:text-4xl lg:text-5xl">
-                <h3 class="text-title-color font-extrabold">
+            <div class="text-center space-y-5">
+                <h3 class="text-title-color font-extrabold text-3xl md:text-4xl lg:text-5xl">
                     Our Featured Products
                 </h3>
                 <p class="text-text-color font-medium text-base max-w-[800px] mx-auto">
@@ -191,11 +198,14 @@
             <div class="flex flex-col lg:flex-row flex-1 gap-12">
                 <!-- great tea image -->
                 <div class="grid grid-cols-1  md:grid-cols-2 gap-7">
-                    <div class="w-auto lg::w-56 h-32 bg-gradient-to-r from-red-300 to-amber-500 rounded-xl"></div>
-                    <div class="w-auto lg:w-56 bg-[#E6A6231A] pt-12 pb-7 px-7 row-span-2 rounded-xl flex justify-center">
+                    <div class="w-auto lg::w-56 h-32 bg-gradient-to-r from-[#f00] to-[#FF8938] opacity-10 rounded-xl">
+                    </div>
+                    <div
+                        class="w-auto lg:w-56 bg-[#E6A6231A] pt-12 pb-7 px-7 row-span-2 rounded-xl flex justify-center">
                         <img src="./images/fresh-1.png" alt="">
                     </div>
-                    <div class="w-auto lg:w-56 bg-[#5776391A] pt-12 pb-7 px-7 row-span-2 rounded-xl flex justify-center">
+                    <div
+                        class="w-auto lg:w-56 bg-[#5776391A] pt-12 pb-7 px-7 row-span-2 rounded-xl flex justify-center">
                         <img src="./images/fresh-2.png" alt="">
                     </div>
                     <div class="w-auto lg:w-56 h-32 bg-gradient-to-r from-[#D9D9D9] to-slate-100 rounded-xl"></div>
@@ -206,7 +216,10 @@
                         Great Tea, Freshly <br> Presented
                     </h3>
                     <p class="text-text-color font-medium mb-7">
-                        The meaning of gong cha is chanese is to provide the best tea to emperor from all possessions . It represents the highest quality and self expectation. Establishing in 2006, Gong cha had been deeply appreciated by its custoers  because of good words of mouth and unique customized service orginated from Taiwan.
+                        The meaning of gong cha is chinese is to provide the best tea to emperor from all possessions .
+                        It represents the highest quality and self expectation. Establishing in 2006, Gong cha had been
+                        deeply appreciated by its customers because of good words of mouth and unique customized service
+                        originated from Taiwan.
                     </p>
                     <h4 class="text-title-color font-extrabold text-xl">
                         Unique Taste
@@ -220,6 +233,66 @@
                     <p class="text-text-color font-medium">
                         Premium Quality that makes tea more elegant and more durable when you use it.
                     </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- super clients section -->
+        <section class="max-w-screen-xl mx-auto px-8 md:px-16 lg:px-20 my-24">
+            <!-- super clients container -->
+            <div class="flex flex-col gap-10 lg:flex-row bg-gradient-to-l from-[#f00] to-[#FF8938] px-6 py-10 md:px-14 md:py-16">
+                <!-- super clients content -->
+                <div class="flex items-center lg:pr-10">
+                    <div class="">
+                        <h2 class="text-[#F4F4F4] font-extrabold text-3xl md:text-4xl lg:text-5xl">
+                            Meet Our Super <br> Clients
+                        </h2>
+                        <p class="text-[#F4F4F4] font-medium mt-5 mb-7">
+                            There are many variations of passages of Lorem Ipsum available, but the majority have suffered
+                            alteration in some form, by injected humour, or randomised words which don't look even slightly
+                            believable.
+                        </p>
+                        <button class="btn bg-white rounded-full">Show All</button>
+                    </div>
+                </div>
+                <!-- super clients review container -->
+                <div class="space-y-8 lg:space-y-12 relative">
+                    <!-- review 1 -->
+                    <div class="bg-white rounded-lg p-6 w-[90%] mx-auto md:w-full md:px-8 md:py-4 relative opacity-40 z-10">
+                        <img src="./images/client.png" alt="client" class="absolute -left-8 -top-8">
+                        <p class="font-medium text-text-color mb-5">
+                            We are providing the best and suitable home insurance services for the people who are interested to treatment
+                        </p>
+                        <h5 class="text-title-color font-bold">Ilham Yuda</h5>
+                        <p class="font-medium text-[#5D5A6F]">Businessman</p>
+                        <div class="flex justify-end">
+                            <img src="images/circles.png" alt="">
+                        </div>
+                    </div>
+                    <!-- review 2 -->
+                    <div class="bg-white rounded-lg p-6 w-[90%] mx-auto md:w-full md:px-8 md:py-4 absolute top-24 lg:top-16 right-5 lg:-left-20 z-20">
+                        <img src="./images/client.png" alt="client" class="absolute -left-8 -top-8">
+                        <p class="font-medium text-text-color mb-5">
+                            We are providing the best and suitable home insurance services for the people who are interested to treatment
+                        </p>
+                        <h5 class="text-title-color font-bold">Ilham Yuda</h5>
+                        <p class="font-medium text-[#5D5A6F]">Businessman</p>
+                        <div class="flex justify-end">
+                            <img src="images/circles.png" alt="">
+                        </div>
+                    </div>
+                    <!-- review 3 -->
+                    <div class="bg-white rounded-lg p-6 w-[90%] mx-auto md:w-full md:px-8 md:py-4 relative opacity-40 z-10">
+                        <img src="./images/client.png" alt="client" class="absolute -left-8 -top-8">
+                        <p class="font-medium text-text-color mb-5">
+                            We are providing the best and suitable home insurance services for the people who are interested to treatment
+                        </p>
+                        <h5 class="text-title-color font-bold">Ilham Yuda</h5>
+                        <p class="font-medium text-[#5D5A6F]">Businessman</p>
+                        <div class="flex justify-end">
+                            <img src="images/circles.png" alt="">
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
